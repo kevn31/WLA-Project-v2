@@ -1,0 +1,679 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectGuid>{E9C14AE5-1D01-3179-C1CD-FA0858BD35C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_2;UNITY_2018_2;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2018.2.2f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Devdog\General\ExtensionMethods\AnimatorExtensionMethods.cs" />
+    <Compile Include="Assets\Devdog\General\ExtensionMethods\AudioSourceExtensionMethods.cs" />
+    <Compile Include="Assets\Devdog\General\ExtensionMethods\ComponentExtensionMethod.cs" />
+    <Compile Include="Assets\Devdog\General\ExtensionMethods\GameObjectExtensionMethods.cs" />
+    <Compile Include="Assets\Devdog\General\ExtensionMethods\TransformExtensionMethods.cs" />
+    <Compile Include="Assets\Devdog\General\Input\Interfaces\IMouseCallbacks.cs" />
+    <Compile Include="Assets\Devdog\General\Integrations\Rewired\RewiredHelper.cs" />
+    <Compile Include="Assets\Devdog\General\Integrations\Rewired\TriggerRewiredInputHandler.cs" />
+    <Compile Include="Assets\Devdog\General\Integrations\Rewired\UI\RewiredTriggerUI.cs" />
+    <Compile Include="Assets\Devdog\General\Integrations\Rewired\UIWindowRewiredInputHandler.cs" />
+    <Compile Include="Assets\Devdog\General\Language\MultiLangString.cs" />
+    <Compile Include="Assets\Devdog\General\Localization\Interfaces\ILocalizedObject.cs" />
+    <Compile Include="Assets\Devdog\General\Localization\LocalizationDatabase.cs" />
+    <Compile Include="Assets\Devdog\General\Localization\LocalizedAudioClip.cs" />
+    <Compile Include="Assets\Devdog\General\Localization\LocalizedObject.cs" />
+    <Compile Include="Assets\Devdog\General\Localization\LocalizedObjectBase.cs" />
+    <Compile Include="Assets\Devdog\General\Localization\LocalizedSprite.cs" />
+    <Compile Include="Assets\Devdog\General\Localization\LocalizedString.cs" />
+    <Compile Include="Assets\Devdog\General\Localization\LocalizedTexture2D.cs" />
+    <Compile Include="Assets\Devdog\General\Managers\AudioManager.cs" />
+    <Compile Include="Assets\Devdog\General\Managers\GeneralSettingsManager.cs" />
+    <Compile Include="Assets\Devdog\General\Managers\InputManager.cs" />
+    <Compile Include="Assets\Devdog\General\Managers\LocalizationManager.cs" />
+    <Compile Include="Assets\Devdog\General\Managers\ManagerBase.cs" />
+    <Compile Include="Assets\Devdog\General\Managers\PlayerManager.cs" />
+    <Compile Include="Assets\Devdog\General\Managers\ScriptableObjects\GeneralSettings.cs" />
+    <Compile Include="Assets\Devdog\General\Managers\TriggerManager.cs" />
+    <Compile Include="Assets\Devdog\General\Misc\Attributes\ReplacedByAttribute.cs" />
+    <Compile Include="Assets\Devdog\General\Misc\AudioClipInfo.cs" />
+    <Compile Include="Assets\Devdog\General\Misc\CursorIcon.cs" />
+    <Compile Include="Assets\Devdog\General\Misc\DestroyAfterSeconds.cs" />
+    <Compile Include="Assets\Devdog\General\Misc\DevdogLogger.cs" />
+    <Compile Include="Assets\Devdog\General\Misc\DisableParticleSystemAfterSeconds.cs" />
+    <Compile Include="Assets\Devdog\General\Misc\DontDestroyOnLoad.cs" />
+    <Compile Include="Assets\Devdog\General\Misc\FMinMaxRange.cs" />
+    <Compile Include="Assets\Devdog\General\Misc\Interfaces\ILocalIdentifier.cs" />
+    <Compile Include="Assets\Devdog\General\Misc\LocalIdentifier.cs" />
+    <Compile Include="Assets\Devdog\General\Misc\LocalizedAudioClipInfo.cs" />
+    <Compile Include="Assets\Devdog\General\Misc\MinMaxRange.cs" />
+    <Compile Include="Assets\Devdog\General\Misc\MinMaxVector3.cs" />
+    <Compile Include="Assets\Devdog\General\Misc\MotionInfo.cs" />
+    <Compile Include="Assets\Devdog\General\Misc\PositionAtPlayer.cs" />
+    <Compile Include="Assets\Devdog\General\Misc\Timer\FakeTimerHelper.cs" />
+    <Compile Include="Assets\Devdog\General\Misc\Timer\Interfaces\ITimerHelper.cs" />
+    <Compile Include="Assets\Devdog\General\Misc\Timer\TimerHelper.cs" />
+    <Compile Include="Assets\Devdog\General\Misc\Timer\TimerUtility.cs" />
+    <Compile Include="Assets\Devdog\General\Player\Interfaces\IPlayerInputCallbacks.cs" />
+    <Compile Include="Assets\Devdog\General\Player\Interfaces\IPlayerTriggerHandler.cs" />
+    <Compile Include="Assets\Devdog\General\Player\Player.cs" />
+    <Compile Include="Assets\Devdog\General\Player\Player2D.cs" />
+    <Compile Include="Assets\Devdog\General\Player\PlayerTriggerHandler.cs" />
+    <Compile Include="Assets\Devdog\General\Player\PlayerTriggerHandler2D.cs" />
+    <Compile Include="Assets\Devdog\General\Player\PlayerTriggerHandlerBase.cs" />
+    <Compile Include="Assets\Devdog\General\Pool\ComponentPool.cs" />
+    <Compile Include="Assets\Devdog\General\Pool\GameObjectPool.cs" />
+    <Compile Include="Assets\Devdog\General\Pool\Interfaces\IPoolable.cs" />
+    <Compile Include="Assets\Devdog\General\Pool\PoolBase.cs" />
+    <Compile Include="Assets\Devdog\General\Relevancy\Interfaces\IObjectRelevancy.cs" />
+    <Compile Include="Assets\Devdog\General\Relevancy\ObjectDistanceRelevancy.cs" />
+    <Compile Include="Assets\Devdog\General\Relevancy\ObjectNullRelevancy.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\Asset.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\Attributes\AllowSceneObjectsAttribute.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\Attributes\ArrayControlOptionsAttribute.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\Attributes\CategoryAttribute.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\Attributes\CustomSerializationAttribute.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\Attributes\ForceCustomObjectPickerAttribute.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\Attributes\ForceStandardObjectPickerAttribute.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\Attributes\HideGroupAttribute.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\Attributes\HideInCreationWindowAttribute.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\Attributes\HideInPropertiesAttribute.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\Attributes\HideTypePicker.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\Attributes\IgnoreCustomSerializationAttribute.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\Attributes\InspectorReadOnlyAttribute.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\Attributes\OnlyDerivedTypesAttribute.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\Attributes\RequiredAttribute.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\Attributes\SummaryAttribute.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\BetterMonoBehaviour.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\BetterScriptableObject.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\BetterSerializationModel.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\fsUnityEngineObjectConverter.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\Generated\AotConverter_Devdog_General_LocalizedAudioClipInfo.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\Generated\AotConverter_Devdog_General_MotionInfo.cs" />
+    <Compile Include="Assets\Devdog\General\Serialization\JsonSerializer.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\fsArrayConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\fsDateConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\fsDictionaryConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\fsEnumConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\fsForwardConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\fsGuidConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\fsIEnumerableConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\fsKeyValuePairConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\fsNullableConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\fsPrimitiveConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\fsReflectedConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\fsTypeConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\fsWeakReferenceConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\Unity\AnimationCurve_DirectConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\Unity\Bounds_DirectConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\Unity\Gradient_DirectConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\Unity\GUIStyle_DirectConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\Unity\GUIStyleState_DirectConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\Unity\Keyframe_DirectConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\Unity\LayerMask_DirectConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\Unity\Rect_DirectConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Converters\Unity\RectOffset_DirectConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\fsAotCompilationManager.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\fsBaseConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\fsConfig.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\fsContext.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\fsConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\fsConverterRegistrar.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\fsData.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\fsDirectConverter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\fsExceptions.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\fsIgnoreAttribute.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\fsISerializationCallbacks.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\fsJsonParser.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\fsJsonPrinter.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\fsMemberSerialization.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\fsObjectAttribute.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\fsObjectProcessor.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\fsPropertyAttribute.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\fsResult.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\fsSerializer.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Internal\fsCyclicReferenceManager.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Internal\fsOption.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Internal\fsPortableReflection.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Internal\fsTypeExtensions.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Internal\fsVersionedType.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Internal\fsVersionManager.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Reflection\fsMetaProperty.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Reflection\fsMetaType.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Reflection\fsReflectionUtility.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\FullSerializer\Source\Reflection\fsTypeCache.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\UniLinq\Check.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\UniLinq\Enumerable.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\UniLinq\Grouping.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\UniLinq\IGrouping.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\UniLinq\ILookup.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\UniLinq\IOrderedEnumerable.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\UniLinq\Lookup.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\UniLinq\OrderedEnumerable.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\UniLinq\OrderedSequence.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\UniLinq\QuickSort.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\UniLinq\SortContext.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\UniLinq\SortDirection.cs" />
+    <Compile Include="Assets\Devdog\General\ThirdParty\UniLinq\SortSequenceContext.cs" />
+    <Compile Include="Assets\Devdog\General\Triggers\IgnoreRangeTriggerRangeHandler.cs" />
+    <Compile Include="Assets\Devdog\General\Triggers\Interfaces\ITriggerCallbacks.cs" />
+    <Compile Include="Assets\Devdog\General\Triggers\Interfaces\ITriggerInputHandler.cs" />
+    <Compile Include="Assets\Devdog\General\Triggers\Interfaces\ITriggerRangeHandler.cs" />
+    <Compile Include="Assets\Devdog\General\Triggers\Interfaces\ITriggerWindowContainer.cs" />
+    <Compile Include="Assets\Devdog\General\Triggers\Selectors\BestTriggerSelectorBase.cs" />
+    <Compile Include="Assets\Devdog\General\Triggers\Selectors\RangeBestTriggerSelector.cs" />
+    <Compile Include="Assets\Devdog\General\Triggers\Selectors\RaycastBestTriggerSelector.cs" />
+    <Compile Include="Assets\Devdog\General\Triggers\Trigger.cs" />
+    <Compile Include="Assets\Devdog\General\Triggers\TriggerActionInfo.cs" />
+    <Compile Include="Assets\Devdog\General\Triggers\TriggerBase.cs" />
+    <Compile Include="Assets\Devdog\General\Triggers\TriggerInputHandler.cs" />
+    <Compile Include="Assets\Devdog\General\Triggers\TriggerInputHandlerBase.cs" />
+    <Compile Include="Assets\Devdog\General\Triggers\TriggerRangeHandler.cs" />
+    <Compile Include="Assets\Devdog\General\Triggers\UI\TriggerUI.cs" />
+    <Compile Include="Assets\Devdog\General\Triggers\Utilities\TriggerUtility.cs" />
+    <Compile Include="Assets\Devdog\General\UI\Helpers\AnimatorHelper.cs" />
+    <Compile Include="Assets\Devdog\General\UI\Utilities\UIUtility.cs" />
+    <Compile Include="Assets\Devdog\General\UI\Utilities\UIWindowUtility.cs" />
+    <Compile Include="Assets\Devdog\General\UI\Windows\DraggableWindow.cs" />
+    <Compile Include="Assets\Devdog\General\UI\Windows\Interfaces\IUIWindowInputHandler.cs" />
+    <Compile Include="Assets\Devdog\General\UI\Windows\UIWindow.cs" />
+    <Compile Include="Assets\Devdog\General\UI\Windows\UIWindowField.cs" />
+    <Compile Include="Assets\Devdog\General\UI\Windows\UIWindowInputHandler.cs" />
+    <Compile Include="Assets\Devdog\General\UI\Windows\UIWindowPage.cs" />
+    <Compile Include="Assets\Devdog\General\UI\Windows\UIWindowSync.cs" />
+    <Compile Include="Assets\Devdog\General\Utilities\CoroutineUtility.cs" />
+    <Compile Include="Assets\Devdog\General\Utilities\ReflectionUtility.cs" />
+    <Compile Include="Assets\Devdog\General\Utilities\SceneUtility.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\Antialiasing.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\Bloom.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\BloomAndFlares.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\BloomOptimized.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\Blur.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\BlurOptimized.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\CameraMotionBlur.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\ColorCorrectionCurves.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\ColorCorrectionLookup.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\ColorCorrectionRamp.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\ContrastEnhance.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\ContrastStretch.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\CreaseShading.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\DepthOfFieldDeprecated.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\EdgeDetection.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\Fisheye.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\GlobalFog.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\Grayscale.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\ImageEffectBase.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\ImageEffects.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\MotionBlur.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\NoiseAndGrain.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\NoiseAndScratches.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\PostEffectsBase.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\PostEffectsHelper.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\Quads.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\ScreenOverlay.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\ScreenSpaceAmbientObscurance.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\ScreenSpaceAmbientOcclusion.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\SepiaTone.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\SunShafts.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\TiltShift.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\Tonemapping.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\Triangles.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\Twirl.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Scripts\Vortex.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\CollectionCopyToContainer.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Controllers\ExplodeAfter.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Controllers\FlockGroup.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Controllers\FlockUnit.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Controllers\ShipController.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Controllers\SmoothFollow.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Controllers\UnitShooter.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\CreateMeshPointTopology.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Demo\EventOnTrigger.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Demo\ShipVisuals.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\ImageEffects\HologramImageEffect.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Integration\InventoryPro\InventoryProShipVisuals.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Integration\InventoryPro\LayoutChanger.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Integration\InventoryPro\LoadItemInfo.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Integration\InventoryPro\Modules\Crafting\SciFiCraftingProgressUI.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Integration\InventoryPro\Modules\Crafting\SciFiCraftingSuccessEffect.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Integration\InventoryPro\Modules\Crafting\SciFiInventoryCraftingBlueprintUI.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Integration\InventoryPro\RadarGraph.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Integration\InventoryPro\SelectItemOnUIHover.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Integration\InventoryPro\Slots\SciFiItemCollectionSlotUI.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Integration\InventoryPro\Slots\SciFiItemCollectionSlotUIKeyTrigger.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Integration\InventoryPro\Slots\SciFiItemCollectionSlotUILoot.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Integration\InventoryPro\Slots\SciFiItemCollectionSlotUIStatic.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Integration\InventoryPro\UIHelpers\CollectionHelper.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Integration\InventoryPro\UIHelpers\LoadItemInfoHelper.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Integration\InventoryPro\UseSlotOnKey.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\PointGridGenerator.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\SciFiDesignConstants.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\SciFiSceneLoaderHelper.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\SciFiSceneLoaderInstantiator.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\SinBounce.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\SkyboxMaterialRotator.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\Spin.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\BackgroundGenerator\BackgroundMeshGenerator.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\DragPreviewItem.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\Dropdown\Dropdown.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\Dropdown\ListPool.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\Dropdown\ObjectPool.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\ImageFillInterpolator.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\ImageToggler.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\LoadProgressImages.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\Models\NextWindowUI.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\Models\PrevWindowUI.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\Models\StatRowUI.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\Models\UsageRequirementRowUI.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\OnSelectTriggerButtonUse.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\PingPong.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\PrimitiveShape.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\PrimitiveShapeRadar.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\Rotate.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\RotatePingPong.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\SetDateTime.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\ShaderValueInterpolator.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\SliderInterpolator.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\TraceRectTransformBounds.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\TransformRotationFromMousePosition.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\UIElementKeyActions.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\UIShowValue.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\UIWindowPageGroup.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UI\UseButtonOnKey.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UIHelpers\GeneralUIHelper.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UIHelpers\PointerUIHelper.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UIHelpers\SelectableUIHelper.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UIHelpers\TimerUIHelper.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UIHelpers\ToggleUIHelper.cs" />
+    <Compile Include="Assets\Devdog\SciFiDesign\FirstVersion\Scripts\UIHelpers\UIWindowHelper.cs" />
+    <Compile Include="Assets\Devdog\Script\ChoixManette.cs" />
+    <Compile Include="Assets\Devdog\Script\Rotation_Helice.cs" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\Shaders\Hologram.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\ShowAlphaChannel.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\SunShaftsComposite.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\Shaders\HologramImageEffect.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\Shaders\Shockwave.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\Shaders\DigitalGlitchUIReflection.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\PostEffectCurvature.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\MotionBlur.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\RadialBlur.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\ContrastComposite.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\FisheyeShader.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\Shaders\BackgroundMesh.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\frag_ao.cginc" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\Fonts\Michroma\License\OFL.txt" />
+    <None Include="Assets\Devdog\SciFiDesign\README.txt" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\SSAOShader.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\ConvertDepth.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\Shaders\DigitalGlitchUIDepthBuffer.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\CreaseApply.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\GlobalFog.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\Shaders\GlassWall.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\Fonts\Orbitron\OFL.txt" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\Shaders\DigitalGlitchUI.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\CameraMotionBlur.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\MotionBlurClear.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\ColorCorrectionEffect.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\GrayscaleEffect.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\SepiaToneEffect.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\TwirlEffect.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\VortexEffect.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\NoiseAndGrain.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\VignettingShader.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\Tonemapper.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\EdgeDetectNormals.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\BlendModesOverlay.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\SimpleClear.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
+    <None Include="Assets\Devdog\General.xml" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+    <None Include="Assets\Devdog\SciFiDesign\FirstVersion\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>D:/ZZZ_ Welove aero/Travail Week end/NewProject/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>D:/ZZZ_ Welove aero/Travail Week end/NewProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>D:/ZZZ_ Welove aero/Travail Week end/NewProject/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:/ZZZ_ Welove aero/Travail Week end/NewProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.BaselibModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CloudWebServicesModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FacebookModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.FacebookModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FileSystemHttpModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TimelineModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Locator">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Devdog.Internal">
+      <HintPath>D:/ZZZ_ Welove aero/Travail Week end/NewProject/Assets/Devdog/Internal/Devdog.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Users/debon/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>C:/Users/debon/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript.Lang">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

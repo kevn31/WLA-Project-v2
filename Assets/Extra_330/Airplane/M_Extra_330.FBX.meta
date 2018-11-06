@@ -1,0 +1,164 @@
+fileFormatVersion: 2
+guid: 7dced771ea348d1449553bae5582737d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Front_Left_Fin
+    100002: Front_Left_Landing_Wheel
+    100004: Front_Right_Fin
+    100006: Front_Right_Landing_Wheel
+    100008: Front_Wings
+    100010: //RootNode
+    100012: Propeler_1
+    100014: Propeler_2
+    100016: Rear_Landing_Gear
+    100018: Rear_Landing_Wheel
+    100020: Rear_Left_Fin
+    100022: Rear_Right_Fin
+    100024: Rear_Wings
+    100026: Rotor
+    100028: Vertical_Tail
+    400000: Front_Left_Fin
+    400002: Front_Left_Landing_Wheel
+    400004: Front_Right_Fin
+    400006: Front_Right_Landing_Wheel
+    400008: Front_Wings
+    400010: //RootNode
+    400012: Propeler_1
+    400014: Propeler_2
+    400016: Rear_Landing_Gear
+    400018: Rear_Landing_Wheel
+    400020: Rear_Left_Fin
+    400022: Rear_Right_Fin
+    400024: Rear_Wings
+    400026: Rotor
+    400028: Vertical_Tail
+    2100000: 01 - Default
+    2300000: Front_Left_Fin
+    2300002: Front_Left_Landing_Wheel
+    2300004: Front_Right_Fin
+    2300006: Front_Right_Landing_Wheel
+    2300008: Front_Wings
+    2300010: //RootNode
+    2300012: Propeler_1
+    2300014: Propeler_2
+    2300016: Rear_Landing_Gear
+    2300018: Rear_Landing_Wheel
+    2300020: Rear_Left_Fin
+    2300022: Rear_Right_Fin
+    2300024: Rear_Wings
+    2300026: Rotor
+    2300028: Vertical_Tail
+    3300000: Front_Left_Fin
+    3300002: Front_Left_Landing_Wheel
+    3300004: Front_Right_Fin
+    3300006: Front_Right_Landing_Wheel
+    3300008: Front_Wings
+    3300010: //RootNode
+    3300012: Propeler_1
+    3300014: Propeler_2
+    3300016: Rear_Landing_Gear
+    3300018: Rear_Landing_Wheel
+    3300020: Rear_Left_Fin
+    3300022: Rear_Right_Fin
+    3300024: Rear_Wings
+    3300026: Rotor
+    3300028: Vertical_Tail
+    4300000: Plane_Body
+    4300002: Front_Wings
+    4300004: Front_Right_Fin
+    4300006: Front_Left_Fin
+    4300008: Rear_Wings
+    4300010: Rear_Left_Fin
+    4300012: Rear_Right_Fin
+    4300014: Rotor
+    4300016: Propeler_2
+    4300018: Propeler_1
+    4300020: Rear_Landing_Gear
+    4300022: Rear_Landing_Wheel
+    4300024: Vertical_Tail
+    4300026: Front_Right_Landing_Wheel
+    4300028: Front_Left_Landing_Wheel
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

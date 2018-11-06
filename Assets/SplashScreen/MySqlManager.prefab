@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1069383883529300}
+  m_IsPrefabAsset: 1
+--- !u!1 &1069383883529300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4123593618448544}
+  - component: {fileID: 114298677134742848}
+  m_Layer: 0
+  m_Name: MySqlManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4123593618448544
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1069383883529300}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.7109375, y: 4.272461, z: -131.59058}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114298677134742848
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1069383883529300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b62b63dcb325474d96203758d65bfbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  host: localhost
+  database: wla
+  username: root
+  password: 
+  CanvasRegister: {fileID: 0}
+  RPseudo: {fileID: 0}
+  REmail: {fileID: 0}
+  RPassword: {fileID: 0}
+  RConfirmation: {fileID: 0}
+  RFirstName: {fileID: 0}
+  RLastName: {fileID: 0}
+  RPhoneNumber: {fileID: 0}
+  RAddress: {fileID: 0}
+  RCity: {fileID: 0}
+  RZipCode: {fileID: 0}
+  gender: {fileID: 0}
+  selectedGender: {fileID: 0}
+  IsValidGender: 0
+  country: {fileID: 0}
+  selectedCountry: {fileID: 0}
+  IsValidCountry: 0
+  birthmonth: {fileID: 0}
+  selectedBirthMonth: {fileID: 0}
+  IsValidBirthMonth: 0
+  birthday: {fileID: 0}
+  selectedBirthDay: {fileID: 0}
+  IsValidBirthDay: 0
+  birthyear: {fileID: 0}
+  selectedBirthYear: {fileID: 0}
+  IsValidBirthYear: 0
+  profile: {fileID: 0}
+  selectedProfile: {fileID: 0}
+  IsValidProfile: 0
+  readTerms: {fileID: 0}
+  IsValidTerms: 0
+  acceptTerms: {fileID: 0}
+  CanvasTerms: {fileID: 0}
+  RtxtInfos: {fileID: 0}
+  CanvasLogin: {fileID: 0}
+  LPseudo: {fileID: 0}
+  LPassword: {fileID: 0}
+  LtxtInfos: {fileID: 0}
+  IBelogin: 0
+  IPseudo: 
+  IFirstName: 
+  ILastName: 
+  IEmail: 
+  IGender: 
+  IPhoneNumber: 
+  ICountry: 
+  IAddress: 
+  ICity: 
+  IZipCode: 
+  IBirthMonth: 
+  IBirthDay: 
+  IBirthYear: 
+  IProfile: 
+  IPoints: 0
+  IPoints2: 0
+  IPoints3: 0
+  IPoints4: 0
+  IPoints5: 0
