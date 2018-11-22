@@ -401,6 +401,9 @@
     <Compile Include="Packages\com.unity.textmeshpro\Scripts\Runtime\TMPro_UGUI_Private.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\AirplanePhysics\Code\Shaders\UnlitAlphaColor.shader" />
+    <None Include="Assets\AirplanePhysics\Code\Shaders\VertexColor_Diffuse.shader" />
+    <None Include="Assets\AirplanePhysics\Code\Shaders\VertxColor_Terrain.shader" />
     <None Include="Assets\Devdog\General.xml" />
     <None Include="Assets\Devdog\SciFiDesign\FirstVersion\Fonts\Michroma\License\OFL.txt" />
     <None Include="Assets\Devdog\SciFiDesign\FirstVersion\Fonts\Orbitron\OFL.txt" />

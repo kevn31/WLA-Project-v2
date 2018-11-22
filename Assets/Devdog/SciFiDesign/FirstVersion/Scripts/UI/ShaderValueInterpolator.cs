@@ -35,7 +35,7 @@ namespace Devdog.SciFiDesign.UI
         private int _shaderNormalizedTimeID;
         private UIWindow _window;
 
-
+       
         public UnityEvent onAnimate = new UnityEvent();
 
 
@@ -97,7 +97,7 @@ namespace Devdog.SciFiDesign.UI
                     yield return null;
             }
 
-            onAnimate.Invoke();
+           onAnimate.Invoke();
         }
 
         private IEnumerator Adder(GraphicRow row)

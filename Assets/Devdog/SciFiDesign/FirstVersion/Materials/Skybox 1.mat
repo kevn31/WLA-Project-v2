@@ -73,7 +73,7 @@ Material:
     - _Exponent2: 1
     - _Exponent3: 1
     - _Exponent4: 20
-    - _Exposure: 0.38
+    - _Exposure: 0.5
     - _Glossiness: 0.5
     - _ImageType: 0
     - _Layout: 0

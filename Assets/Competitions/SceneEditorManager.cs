@@ -16,10 +16,12 @@ namespace WeLoveAero
 {
     public class SceneEditorManager : MonoBehaviour
     {
+
+        SaveContentBetweenScenesScript saveContentScript;
         EVENTCREATOR_Manager manager;
 
-        essai_Manager essai;
-
+        EventBoutonScript eventBoutonScript;
+        
         public bool ModificationEvent;
         private static int numberStage = 20;
         private static int numberFigureMax = 10;// max de figures possibles
@@ -101,19 +103,27 @@ namespace WeLoveAero
         void Start()
         {
             manager = GameObject.Find("MySqlManager").GetComponent<EVENTCREATOR_Manager>();
+        
         }
 
         public void GenerationBoutons()
         {
+            StartCoroutine(GenerationBoutonsWait());
+          
+        }
+        IEnumerator GenerationBoutonsWait()
+        {
+            yield return new WaitForSeconds(2.0f);
+            eventBoutonScript = GameObject.Find("eventButton2").GetComponent<EventBoutonScript>();
             manager.GetNombreEvent();
-           // Debug.Log("nombre event" + manager.nombreEvent);
+            // Debug.Log("nombre event" + manager.nombreEvent);
             // DestroyButtonsEvent();
             if (boutonEventGenerated == false)
             {
 
                 LocalNombreBouton = 0;
                 bool pause = false;
-               // manager.GetNombreEvent();
+                // manager.GetNombreEvent();
                 //Debug.Log("nombre event" + manager.nombreEvent);
                 /*  if (dt.ToString("yyyy-MM-dd HH:mm:ss") > IDateDebutEvent)//si la date de début est passée
                   { */
@@ -156,9 +166,10 @@ namespace WeLoveAero
                 }
                 //}
                 boutonEventGenerated = true;
+                eventBoutonScript.GetInfoButtonToServer();
             }
-
         }
+
 
         public void GetToServerFigures()
         {
@@ -189,7 +200,22 @@ namespace WeLoveAero
                 EventDateText.text = manager.IDateDebutEventGeneral;
 
         }
+  
+
+
+        public void SaveEventDataBeforePlayEvent()
+        {
+            saveContentScript.SaveEvent();
+         
+            //SceneManager.LoadScene("InGameTest");
+        }
+
+        public void PlayEventScene()
+        {
+          //  saveContentScript.SaveEvent();
+
+            SceneManager.LoadScene("TestEventFlight");
+        }
+
     }
-
-
 }

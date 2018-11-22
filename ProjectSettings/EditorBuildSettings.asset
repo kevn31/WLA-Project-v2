@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/SplashScreen.unity
     guid: 8c0f022a6a1ace040a4fd490ddf9dd46
@@ -15,12 +12,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Database.unity
     guid: dc54ea0f3891e7a46b02e8e4a413cf21
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 89e409739f42d09459d57ae272154635
-  - enabled: 1
     path: Assets/Scenes/HangarScene.unity
     guid: 513400848e0e45742b69f60337ae8edc
   - enabled: 1
-    path: Assets/Scenes/InGameTest.unity
-    guid: d194e1dbc27d0f04b9bf9b1ab4e245aa
+    path: Assets/Scenes/TestEventFlight.unity
+    guid: e5541dc6fc73a2a47a4d72b3f27f8017
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: edc9ffc46b54d66468f14e8778bc3b7b
+  - enabled: 1
+    path: Assets/Scenes/Apprentissage/level1.unity
+    guid: b309d7e504434d8439bf0540081283e0
+  - enabled: 1
+    path: Assets/Scenes/Apprentissage/level2.1.unity
+    guid: a334d29c737cd3f47860efa0a01bc3ce
   m_configObjects: {}

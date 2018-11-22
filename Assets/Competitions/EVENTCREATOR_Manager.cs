@@ -12,6 +12,7 @@ namespace WeLoveAero
 {  
     public class EVENTCREATOR_Manager : MonoBehaviour
     {
+        SaveContentBetweenScenesScript saveContentScript;
         SceneEditorManager sceneEditorScript;
         EventBoutonScript eventButtonScript;
         [Header("DATABASE")]
@@ -120,7 +121,8 @@ namespace WeLoveAero
         // Use this for initialization
         private void Start()
         {
-          //  IDateDebutEvent = "2018/10/10 12:00:00";
+            saveContentScript = GameObject.Find("_Managers").GetComponent<SaveContentBetweenScenesScript>();
+            //  IDateDebutEvent = "2018/10/10 12:00:00";
             test = 0;
             numEventTest = 10;
            // Debug.Log(tabFigureLibrary.Length);
@@ -330,6 +332,45 @@ namespace WeLoveAero
         }
 
 
+        public void GetToServerFiguresOfEvent()   // doit être appeler autant de fois qu il y a de figures à sauvegarder
+        {
+            for (int i = 0; i < 6; i++)
+            {
+                try
+            {
+
+                numeroActualDataFigureRead = 0; // a changer  s incremente de 1 a chaque tour
+                con.Open();
+
+                MySqlCommand CmdSql = new MySqlCommand("SELECT * FROM `eventinfos` WHERE `figurenumber`='" + i + "'", con);
+                MySqlDataReader MyReader = CmdSql.ExecuteReader();//erreur a partir d ici
+               
+                    while (MyReader.Read())
+                    {
+                        int eventId = (int)MyReader["idevent"]/*.ToString()*/;
+                         if(eventId == test)//verifi si c ets bien l objet selectionneé qui passe
+                        {
+                            ActuelFigureSave = (int)MyReader["identifiantfigure"]/*.ToString()*/;
+                            // ActuelFigureSave = (int)MyReader["figurenumber"];
+                            Debug.Log("figure: " + i + " : " + ActuelFigureSave);
+                            saveContentScript.figureNumberTabSave[i] = ActuelFigureSave;
+                            //ActuelFigureSave = i;                                          
+                           // Debug.Log("figuresave: " + i + " : " + saveContentScript.figureNumberTabSave[i]);
+                        }
+
+                    }
+
+                    MyReader.Close();
+                }
+            
+            catch (Exception Ex) { Debug.Log(Ex.ToString()); }
+
+            con.Close();
+            }
+            saveContentScript.SaveEvent();//doit se jouer a la fin seulement 1 fois
+        }
+
+
         public void UpdateFigureCreation()
         {
             con.Open();
@@ -457,7 +498,7 @@ namespace WeLoveAero
                 // Debug.Log("numero de l id : "+ test);
 
                 MySqlDataReader MyReader = CmdSql.ExecuteReader();//erreur a partir d ici
-
+                eventChoisi = numEvent;
                 while (MyReader.Read())
                 {
                     IEventName = (string)MyReader["eventname"];

@@ -127,9 +127,9 @@ namespace WeLoveAero
             }
             if (NumberOfEvent == 5)
             {
-                // buttonEvent = GetComponent<Button>();
+                 buttonEvent = GetComponent<Button>();
                 DateFinText.text = manager1.ITempsRestantEvent5;
-                //buttonEvent.interactable = false;
+                buttonEvent.interactable = false;
                 // Debug.Log("E2222 ");
                 if (manager1.ITempsRestantEvent5 == "Closed")
                 {
@@ -158,6 +158,8 @@ namespace WeLoveAero
         {
             // scriptEditorManager.ChoixEvent(NumberOfEvent);
             manager1.test = NumberOfEvent;
+            //manager1
+
             //NumberOfEvent = manager1.numEventTest;
 
             //TitreEventText.text = manager1.IEventName;
