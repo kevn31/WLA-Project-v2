@@ -101,7 +101,6 @@ namespace WeLoveAero
          {
             scriptStatic.ModelAvion = PlaneCLic;
             scriptStatic.saveModelAvion();
-            Debug.Log("avion choisi par le joueur:  " + scriptStatic.ModelAvion);
             AffichageInfos();
             PlaneShow();
             SetActivePlayButton();
@@ -124,7 +123,7 @@ namespace WeLoveAero
                 Textcontainer.text = infosA350.text;
             }
 
-            if (scriptStatic.ModelAvion == "A220")
+            if (scriptStatic.ModelAvion == "UPF-7")
             {
                 Textcontainer.text = infosA220.text;
             }

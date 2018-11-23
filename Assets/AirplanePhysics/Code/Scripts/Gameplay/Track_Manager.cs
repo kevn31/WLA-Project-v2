@@ -13,7 +13,7 @@ namespace WeLoveAero
         #region Variables
         [Header("Manager Properties")]
         public List<Track> tracks = new List<Track>();
-        public Airplane_Controller airplaneController;
+        //public Airplane_Controller airplaneController;
 
         [Header("Manager UI")]
         public Text gateText;
@@ -89,31 +89,9 @@ namespace WeLoveAero
         {
             Debug.Log("Completed Track!");
 
-            if(airplaneController)
-            {
-                StartCoroutine("WaitForLanding");
-            }
+           
         }
 
-        IEnumerator WaitForLanding()
-        {
-            while(airplaneController.State != AirplaneState.LANDED)
-            {
-                yield return null;
-            }
-
-            Debug.Log("Completed Race!");
-            if (OnCompletedRace != null)
-            {
-                OnCompletedRace.Invoke();
-            }
-
-            if(currentTrack)
-            {
-                currentTrack.IsComplete = true;
-                currentTrack.SaveTrackData();
-            }
-        }
 
         void UpdateUI()
         {
