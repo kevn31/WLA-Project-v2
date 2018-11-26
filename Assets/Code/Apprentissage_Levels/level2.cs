@@ -65,10 +65,9 @@ using UnityEngine.SceneManagement;
             joyStickR.GetComponent<Image>().color = apprentissageColor;
             joyStickL.GetComponent<Image>().color = Color.white;
 
-            joyStickR.transform.GetChild(0).gameObject.SetActive(true);
-            joyStickR.transform.GetChild(1).gameObject.SetActive(true);
+            //joyStickR.transform.GetChild(0).gameObject.SetActive(false);    
 
-            horizon.enabled = false;
+        horizon.enabled = false;
             foreach (Transform child in horizon.transform)
             {
                 child.gameObject.SetActive(false);
@@ -119,8 +118,8 @@ using UnityEngine.SceneManagement;
                 joyStickR.GetComponent<Image>().color = apprentissageColor;
                 joyStickL.GetComponent<Image>().color = Color.white;
 
-                joyStickR.transform.GetChild(0).gameObject.SetActive(true);
-                joyStickR.transform.GetChild(1).gameObject.SetActive(true);
+               // joyStickR.transform.GetChild(0).gameObject.SetActive(false);
+                //joyStickR.transform.GetChild(1).gameObject.SetActive(false);
 
             if (Input.GetAxis("Roll_manette") > 0.9 && stop)
                 {
