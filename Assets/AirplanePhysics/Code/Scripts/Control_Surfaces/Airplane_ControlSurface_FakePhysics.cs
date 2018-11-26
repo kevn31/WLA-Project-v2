@@ -50,7 +50,7 @@ namespace FakePhysics
         #endregion
 
         #region Custom Methods
-        public void HandleControlSurface(Hub_Input1 input)
+        public void HandleControlSurface(Hub_Input input)
         {
             float inputValue = 0f;
             switch(type)

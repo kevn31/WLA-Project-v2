@@ -24,7 +24,7 @@ namespace FakePhysics
         #region Variables
         //[Header("Base Airplane Properties")]
         //public Airplane_Preset airplanePreset;
-        public Hub_Input1 input;
+        public Hub_Input input;
         //public Airplane_Characteristics charactistics;
         //public Transform centerOfGravity;
 

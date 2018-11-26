@@ -10,12 +10,12 @@ public class EnveloppeDeVol : MonoBehaviour {
 
     private Vector3 pastRotationForTheRoll;
 
-    public GameObject outOfFlightAreaUI;
+    //public GameObject outOfFlightAreaUI;
 
     // Use this for initialization
     void Start () {
 
-        outOfFlightAreaUI.SetActive(false);
+        //outOfFlightAreaUI.SetActive(false);
 
     }
 	
@@ -33,7 +33,7 @@ public class EnveloppeDeVol : MonoBehaviour {
         
         if (gameObject.transform.position.y < minHeight)
         {
-            outOfFlightAreaUI.SetActive(true);
+            //outOfFlightAreaUI.SetActive(true);
 
             pastRotationForTheRoll = transform.eulerAngles;
             
@@ -52,7 +52,7 @@ public class EnveloppeDeVol : MonoBehaviour {
         
         else if(gameObject.transform.position.y > maxHeight)
         {
-            outOfFlightAreaUI.SetActive(true);
+            //outOfFlightAreaUI.SetActive(true);
             pastRotationForTheRoll = transform.eulerAngles;
 
             if (pastRotationForTheRoll.x < 3 || pastRotationForTheRoll.x > 180)
@@ -70,7 +70,7 @@ public class EnveloppeDeVol : MonoBehaviour {
 
         else
         {
-            outOfFlightAreaUI.SetActive(false);
+            //outOfFlightAreaUI.SetActive(false);
         }
     }
 
