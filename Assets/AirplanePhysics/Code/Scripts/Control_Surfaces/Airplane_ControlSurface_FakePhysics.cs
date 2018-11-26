@@ -27,8 +27,6 @@ namespace FakePhysics
         private float wantedAngle;
         #endregion
 
-
-
         #region Builtin Methods
     	// Use this for initialization
     	void Start () 
@@ -51,8 +49,6 @@ namespace FakePhysics
         }
         #endregion
 
-
-
         #region Custom Methods
         public void HandleControlSurface(Hub_Input1 input)
         {
@@ -61,14 +57,11 @@ namespace FakePhysics
             {
                 case ControlSurfaceType.Rudder:
                     inputValue = input.f_yaw;
-                    Debug.Log("test yax");
                     break;
 
                 case ControlSurfaceType.Elevator:
                     inputValue = input.f_pitch;
-                    Debug.Log("Test pitch");
                     break;
-
 
                 case ControlSurfaceType.Aileron:
                     inputValue = input.f_roll;
