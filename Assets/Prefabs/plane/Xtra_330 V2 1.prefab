@@ -436,6 +436,8 @@ GameObject:
   - component: {fileID: 54713948464795714}
   - component: {fileID: 65208247241213988}
   - component: {fileID: 136689700156956616}
+  - component: {fileID: 114221896604892322}
+  - component: {fileID: 114834416868284246}
   m_Layer: 0
   m_Name: Xtra_330 V2 1
   m_TagString: Untagged
@@ -1212,13 +1214,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1366898202148820}
-  m_LocalRotation: {x: 0.10299345, y: 0.004402638, z: -0.0048691016, w: 0.99466044}
+  m_LocalRotation: {x: 0.103009544, y: 0, z: 0, w: 0.9946804}
   m_LocalPosition: {x: -0.10214101, y: 6.927116, z: -22.039536}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4798645092224914}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 25, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 11.825001, y: 0, z: 0}
 --- !u!4 &4968389455525650
 Transform:
   m_ObjectHideFlags: 1
@@ -1485,7 +1487,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: a47e037e2722592499ecc3b7928ea03e, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1765,7 +1767,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: a47e037e2722592499ecc3b7928ea03e, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1940,7 +1942,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: a47e037e2722592499ecc3b7928ea03e, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2558,7 +2560,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   numberPointArrow: 0
+  numberGate: 0
 --- !u!114 &114077776075348870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2574,6 +2578,29 @@ MonoBehaviour:
   mainProp: {fileID: 1491083612761784}
   blurredProp: {fileID: 1631778270723410}
   blurredProp1: {fileID: 1806729664133068}
+--- !u!114 &114221896604892322
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1706804057733846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a41e9fe22477624fb8da00be212e13a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowScript: {fileID: 114019764985398252}
+  gateSequence:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  CheckPointDummy:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  teleportationResetStep: 0
+  endLevelNumber: 3
+  inputScript: {fileID: 0}
 --- !u!114 &114347005164535798
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2705,7 +2732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfdd41c584a0447409bfd483389bcdc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rollUnactive: 0
+  rollUnactive: 1
   throttleUnactive: 0
   f_StickyThrottleValor: 0
   f_xSpeed: 0
@@ -2734,8 +2761,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c099f31185b671b44bf52c8a25c36423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rollUnactive: 0
-  throttleUnactive: 0
+  smokeW: 0
+  smokeR: 0
+  rollUnactive: 1
+  throttleUnactive: 1
   f_StickyThrottleValor: 0
   f_xSpeed: 0
   f_maxSpeed: 200
@@ -2745,10 +2774,14 @@ MonoBehaviour:
   f_speed: 0
   ValeurSlider: {fileID: 0}
   f_stickyThrottle: 0
+  T_Thumbstick: {fileID: 0}
   maxTurn: 0.5
   reactivity_Roll: 0
   reactivity_Pitch: 0
   maxInclinationAngle: 0
+  f_minSpeed: 0
+  maxMultiplicator: 0
+  minMultiplicator: 0
 --- !u!114 &114779910483516516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2780,6 +2813,32 @@ MonoBehaviour:
   mainProp: {fileID: 1491083612761784}
   blurredProp: {fileID: 1631778270723410}
   blurredProp1: {fileID: 1806729664133068}
+--- !u!114 &114834416868284246
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1706804057733846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a17378aa40a2f414abfb6dc48c098ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instructionTxt: {fileID: 0}
+  panelInstruction: {fileID: 0}
+  panelHiding: {fileID: 0}
+  altimeter: {fileID: 0}
+  canvas_EndLevel: {fileID: 0}
+  joyStickL: {fileID: 0}
+  joyStickR: {fileID: 0}
+  manette: {fileID: 0}
+  manette2: {fileID: 0}
+  manette3: {fileID: 0}
+  nameGateCheckpoint:
+  - Gate_003
+  - Gate_006
+  - Gate_011
+  modelArrow: {fileID: 1495874394731038}
 --- !u!114 &114874653968361324
 MonoBehaviour:
   m_ObjectHideFlags: 1
