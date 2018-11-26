@@ -35,15 +35,11 @@ namespace WeLoveAero
             AvionsTypeLigne = GameObject.FindGameObjectsWithTag("Ligne");
             if(scriptStatic == null)
             {
-                Debug.Log("null script ");
                 scriptStatic = GameObject.Find("_Managers").GetComponent<SaveContentBetweenScenesScript>();
 
             }
             else
             {
-                Debug.Log("non null script ");
-                
-                
                 scriptStatic.ModelAvion = null;
             }
             scriptStatic.ModelAvion = null;
@@ -60,7 +56,6 @@ namespace WeLoveAero
                 SetActivePlaneButtons();
                 bePlanesAviable = true;
             }
-                Debug.Log("type de stage dans le hangar: " + scriptStatic.TypeStage);
         }
 
        public void PlaneShow() //montre le model 3d
@@ -78,7 +73,7 @@ namespace WeLoveAero
 
         public void PlayButton()
         {
-           SceneManager.LoadScene("InGameTest");// a changer
+           SceneManager.LoadScene("Free Flight");// a changer
         }
 
         public void BackButton()
@@ -159,7 +154,7 @@ namespace WeLoveAero
       public void SetActivePlaneButtons()
         {
 
-            Debug.Log("tets" + scriptStatic.TypeStage); // type stage se lit bien dans l update mais pas au moment du start c est chelou
+            //Debug.Log("tets" + scriptStatic.TypeStage); // type stage se lit bien dans l update mais pas au moment du start c est chelou
            
             if (scriptStatic.ModeDeJeu == "StageMode" || scriptStatic.ModeDeJeu == "CupMode")
             {

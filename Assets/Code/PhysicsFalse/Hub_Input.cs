@@ -161,7 +161,7 @@ namespace FakePhysics
             if (!rollUnactive)
             {
                 f_rollTurn = Input.GetAxis("Roll_manette");
-
+                
                 if (Input.acceleration.x < 0.05 && Input.acceleration.x > -0.05)
                 {
                     accerlerationX = 0;
@@ -169,8 +169,9 @@ namespace FakePhysics
                 else
                 {
                     f_roll = -accerlerationX * reactivity_Roll;
-                    //Debug.Log(f_roll);
+                    Debug.Log(f_roll);
                 }
+                
             }
 
 
@@ -498,12 +499,10 @@ namespace FakePhysics
                 if (Input.acceleration.y > -0.5 && Input.acceleration.y < 0)
                 {
                     inclinMinY = Input.acceleration.y;
-                    Debug.Log("inclinMinY: " + inclinMinY);
                 }
                 if (Input.acceleration.x < inclinMinX)
                 {
                     inclinMinX = Input.acceleration.x;
-                   Debug.Log("inclinMinX: " + inclinMinX);
                 }
 
                 // if (Input.acceleration.y < inclinMinY)

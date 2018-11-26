@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Apprentissage/level2.1.unity
     guid: a334d29c737cd3f47860efa0a01bc3ce
+  - enabled: 1
+    path: Assets/Scenes/piloteProfile.unity
+    guid: ab090c22f2230994190156c274ba4759
+  - enabled: 1
+    path: Assets/Scenes/Apprentissage/Free Flight.unity
+    guid: 3ecf650dfe426a240a80f709e259e639
   m_configObjects: {}

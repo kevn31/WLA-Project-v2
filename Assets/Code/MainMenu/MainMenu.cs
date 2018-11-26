@@ -180,7 +180,6 @@ using WeLoveAero;
 
             for (int i = 1; i < 6; i++)// 8 = totalStages
             {
-                Debug.Log("pass par ici:" + i);
                 _ButtonStageCheck = GameObject.Find("Stagestest" + i).GetComponent<Button>();
 
                 if (i <= currentStagePlayer)// si i inferieur au stage actuel (par raport au dernier stage complete, la var change à la fin de chaque stage)
@@ -445,6 +444,11 @@ using WeLoveAero;
         public void ShowHangar()
         {
             hangarCanvas.SetActive(true);
+        }
+
+        public void GoToPP()
+        {
+            SceneManager.LoadScene("piloteProfile");
         }
 
     /* public void ActivePanelCompetitionsList()
