@@ -22,11 +22,11 @@ namespace FakePhysics
         private Vector3 pastRotationForTheYaw;
         private Vector3 pastRotationForTheRoll;
 
-        protected float f_pitch = 0f;
-        protected float f_actualPitch = 0f;
+        public float f_pitch = 0f;
+        public float f_actualPitch = 0f;
 
-        protected float f_roll = 0f;
-        protected float f_yaw = 0f;
+        public float f_roll = 0f;
+        public float f_yaw = 0f;
         protected float f_throttle = 0f;
         public float f_throttleSpeed, f_pitchSpeed = 0.5f;
 
@@ -43,8 +43,10 @@ namespace FakePhysics
         public GameObject T_Thumbstick;
 
         private float canTurn = 0;
-        [SerializeField]
-        private float maxTurn, reactivity_Roll, reactivity_Pitch, maxInclinationAngle, f_minSpeed, maxMultiplicator, minMultiplicator;
+
+        public float PitchSensitivity;
+     [SerializeField]
+        public float maxTurn, reactivity_Roll, reactivity_Pitch, maxInclinationAngle, f_minSpeed, maxMultiplicator, minMultiplicator;
         private float accerlerationX, accerlerationY, f_rollTurn, pastRotationRollZ, pastRotationRollY, ReactivityRollTurnZ, ReactivityRollTurnY, turnMultiplicao, f_speedMultiplicator, inclinMinX, inclinMinY;
         private float countDown = 1.0f;
 
@@ -69,6 +71,12 @@ namespace FakePhysics
         // Update is called once per frame
         void Update()
         {
+            //Debug.Log(f_actualPitch);
+            //Debug.Log(f_pitch);
+           // Debug.Log(Input.acceleration.y);
+          
+
+
             if (!calibrationCompleted) calibration();
             else
             {
@@ -87,6 +95,11 @@ namespace FakePhysics
 
         }
 
+        public void SetAngleMort()
+        {
+
+        }
+
         //Create a Throttle Value that gradually grows and shrinks
         protected virtual void StickyThrottleControl()
         {
@@ -94,8 +107,8 @@ namespace FakePhysics
             {
                 f_stickyThrottle = f_stickyThrottle + (-f_throttle * f_throttleSpeed * Time.deltaTime);
 
-                f_stickyThrottle = ValeurSlider.value;
-                //ValeurSlider.value = f_stickyThrottle;
+                //f_stickyThrottle = ValeurSlider.value;
+                ValeurSlider.value = f_stickyThrottle;
             }
 
         }
@@ -107,7 +120,7 @@ namespace FakePhysics
             //f_pitch = Input.GetAxis("Pitch_manette");
 
 
-            if (Input.acceleration.y < 0.02 && Input.acceleration.y > -0.02)
+            if (Input.acceleration.y < inclinMinY + 0.1 && Input.acceleration.y > inclinMinY - 0.1)
             {
                 accerlerationY = 0;
             }
@@ -191,8 +204,8 @@ namespace FakePhysics
 
         protected void ClampInputs()
         {
-            f_pitch = Mathf.Clamp(f_pitch, -1f, 1f);
-            f_actualPitch = Mathf.Clamp(f_actualPitch, -1f, 1f);
+            f_pitch = Mathf.Clamp(f_pitch, -0.5f, 1f);
+            f_actualPitch = Mathf.Clamp(f_actualPitch, -0.5f, 1f);
             f_roll = Mathf.Clamp(f_roll, -1f, 1f);
             f_yaw = Mathf.Clamp(f_yaw, -1f, 1f);
             f_throttle = Mathf.Clamp(f_throttle, -1f, 1f);
@@ -269,7 +282,7 @@ namespace FakePhysics
 
 
 
-            transform.Rotate((f_pitch * Time.deltaTime) * reactivity, 0, 0, Space.Self);
+            transform.Rotate((f_pitch * Time.deltaTime) * PitchSensitivity, 0, 0, Space.Self);
         }
 
 
@@ -301,12 +314,13 @@ namespace FakePhysics
         protected void setRoll()
         {
             pastRotationForTheRoll = transform.eulerAngles;
-            float pastRotationRoll = pastRotationForTheRoll.z + ((f_roll * Time.deltaTime) * reactivity);
+            float pastRotationRoll = pastRotationForTheRoll.z + ((f_roll * Time.deltaTime) * reactivity_Roll);
             transform.rotation = Quaternion.Euler(pastRotationForTheRoll.x, pastRotationForTheRoll.y, pastRotationRoll);
         }
 
         protected void setGyroAngleMax()
         {
+          //  Debug.Log(Input.acceleration.y);
             // maxInclinationAngle, accerlerationX, accerlerationY;
 
             if (Input.acceleration.x > -maxInclinationAngle && Input.acceleration.x < maxInclinationAngle)
@@ -481,15 +495,19 @@ namespace FakePhysics
 
             if (countDown >= 0.5f)
             {
+                if (Input.acceleration.y > -0.5 && Input.acceleration.y < 0)
+                {
+                    inclinMinY = Input.acceleration.y;
+                    Debug.Log("inclinMinY: " + inclinMinY);
+                }
                 if (Input.acceleration.x < inclinMinX)
                 {
                     inclinMinX = Input.acceleration.x;
+                   Debug.Log("inclinMinX: " + inclinMinX);
                 }
 
-                if (Input.acceleration.y < inclinMinY)
-                {
-                    inclinMinY = Input.acceleration.y;
-                }
+                // if (Input.acceleration.y < inclinMinY)
+                
             }
 
 
