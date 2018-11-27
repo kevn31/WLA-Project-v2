@@ -30,9 +30,6 @@ namespace WeLoveAero
         {
             alreadyInstantiate = false;
             //test = Instantiate(plane[0]);
-
-
-
         }
 
         // Update is called once per frame
@@ -59,6 +56,5 @@ namespace WeLoveAero
             }
            
         }
-        s
     }
 }
