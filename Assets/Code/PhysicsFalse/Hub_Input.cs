@@ -58,6 +58,9 @@ namespace FakePhysics
         // Use this for initialization
         void Start()
         {
+            T_Thumbstick = GameObject.Find("Throttle_Slider");
+            ValeurSlider = T_Thumbstick.GetComponent<Slider>();
+
             f_rollTurn = 0.75f;
             f_stickyThrottle = 1f;
 

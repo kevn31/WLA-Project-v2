@@ -12,6 +12,7 @@ namespace FakePhysics
 
         #region Variables
         public Throttle_Percentage VitesseRotation;
+        private GameObject throttleSlider;
 
         [Header("Propeller Properties")]
         public GameObject mainProp;
@@ -25,7 +26,8 @@ namespace FakePhysics
         // Use this for initialization
         void Start()
         {
-
+            throttleSlider = GameObject.Find("Pourcentage_Text");
+            VitesseRotation = throttleSlider.GetComponent<Throttle_Percentage>();
         }
 
 
